@@ -1,0 +1,40 @@
+.forecast {
+  height: 180px;
+  width: 15%;
+  border: silver solid 1px;
+  padding: 5px;
+  display: inline-block;
+  background-color: white;
+}
+
+body {
+    background: no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#inputContainer {
+  background-color: skyblue;
+  width: 60%;
+}
+
+#currentObservationsContainer{
+  background-color: grey;
+  width:50%;
+  height: 225px;
+}
+
+.smallTemps {
+  display: inline;
+  padding: 10px;
+}
+
+.container {
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
