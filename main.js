@@ -110,12 +110,14 @@ function init(){
       location = $dayAfterThat
     }
 
-    var highAndLow = 'Low: '+ obj.low.fahrenheit+ '\xB0F High: '+ obj.high.fahrenheit+ "\xB0F"
+    var low = 'Low: '+ obj.low.fahrenheit+ '\xB0F';
+    var high = 'High: '+ obj.high.fahrenheit+ "\xB0F"
     var date = obj.date.weekday_short + " "+ obj.date.day + '/' + obj.date.month
     var sky = obj.icon_url
 
+    location.find('.low').text(low);
     location.find('.date').text(date);
-    location.find('.highLow').text(highAndLow);
+    location.find('.high').text(high);
     location.find('.sky').prepend('<img src="'+sky+'"></img>')
   }
   function determineSky(weather){
